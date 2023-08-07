@@ -1,9 +1,9 @@
-import Movie from "@/models/movie.model";
+import Peliculas from "@/models/Peliculas.model";
 import BaseCrudService from "../baseCrud.service";
 
-class MovieService extends BaseCrudService<Movie>{
+class MovieService extends BaseCrudService<Peliculas>{
   constructor() {
-    super("Movie")
+    super("Peliculas")
   }
 }
 const movieService = Object.freeze(new MovieService());
